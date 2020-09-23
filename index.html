@@ -3,35 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>weather App</title>
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Weather App</title>
 </head>
-<body >
-    <header id="head" class="overlay">
-        <h1><img src="../images/download.png" alt=""
-       id="logo"> WEATHER  APP</h1>
-       
-       
-    </header>
+<body>
+    <div id="cont">
+        <header id="head">
+            <h1 id="title">Weather App</h1>
+        </header>
+        <section id="user__input">
+            <form >
+                <label for="cities">Choose a City</label>
+                <select id="cities" name="cities">
+                  <option value="London">London,uk</option>
+                  <option value="Paris">Paris,fr</option>
+                  <option value="Cairo">Cairo,eg</option>
+                  
+                </select>
+                <input type="submit" id="sub">
+              </form>
+        </section>
+        <main id="main__cont">
 
-<center><form id="frm">
-    <label id="chos"
-    for="cities">Choose a city:</label>
-    <select id="cities" name="cities">
-      <option value="Cairo">Cairo,eg</option>
-      <option value="Damitta">Damitta,eg</option>
-      <option value="Alex">Alex,eg</option>
-      
-    </select>
-    <input id="sub" class="opacity" type="submit">
-  </form></center>
-  <div id="cont">
-
-  </div>
+        </main>
+        <footer id="foot">
+            <h3 id="copy">CopyRights reserved @ Weather App</h3>
+        </footer>
 
 
 
 
-  <script src="./js/index.js"></script>  
+
+
+
+
+
+        <!-- <form >
+            <label for="cities">Choose a city:</label>
+            <select id="cities" name="cities">
+              <option value="London">London,uk</option>
+              <option value="Paris">Paris,fr</option>
+              <option value="Cairo">Cairo,eg</option>
+              
+            </select>
+            <input type="submit" id="sub">
+          </form> -->
+
+          <!-- <div id="location">
+            <button id = "find-me">Show my location</button><br/>
+            <p id = "status"></p>
+            <a id = "map-link" target="_blank"></a>
+          </div> -->
+
+    </div>
+
+
+
+
+
+
+
+    <script src="./js/index.js"></script>
 </body>
 </html>
